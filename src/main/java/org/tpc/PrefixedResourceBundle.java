@@ -231,8 +231,10 @@ public class PrefixedResourceBundle extends ResourceBundle {
 	 * @param separator The separator string to check
 	 */
 	private void checkAndAssignSeparator(String separator) {
-		if(separator == null || (this.separator = separator.trim()).isEmpty())
+		if(separator == null || (separator = separator.trim()).isEmpty())
 			throw new IllegalArgumentException( "Separator cannot be null or empty!");
+
+		this.separator = separator;
 	}
 
 	@Override

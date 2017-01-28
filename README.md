@@ -5,10 +5,12 @@ This package provides two additional resource bundles (`java.util.ResourceBundle
 This resource bundle can be used for testing purposes and enables adding / removing of key value pairs.
 The class is a simple wrapper for a `java.util.Map`.
 
-> DynamicResourceBundle bundle = new DynamicResourceBundle();
-> bundle.add("key", "value");
-> bundle.add("another key", "another value");
-> bundle.remove("key");
+```
+DynamicResourceBundle bundle = new DynamicResourceBundle();
+bundle.add("key", "value");
+bundle.add("another key", "another value");
+bundle.remove("key");
+```
 
 ## Prefixed Resource Bundle
 This resource bundle organizes it's sub bundles into namespaces (titled as prefix).
